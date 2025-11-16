@@ -1,0 +1,132 @@
+Design a polished 3-column contract upload screen for "ContractAI", a premium AI platform. 
+🔹 Page Structure: Left Column (Sidebar) — App navigation Center Column (Main Upload Section) — User workflow Right Column (Whitespace + Minimal Hints) — Optional tips or system info Full-width layout, responsive to 1440px+, soft max-width constraint for central column Balanced white space, clean grid, generous margins (32px), minimal shadow, rounded corners (12–16px) 
+🔹 Left Sidebar (Vertical Navigation) Fixed dark sidebar with icons + labels App Logo / "ContractAI" (bold) at top Nav Items: 🏠 Dashboard 📤 Upload (highlighted) 📜 History ⚙️ Settings Sticky footer nav item: 🔒 Logout Hover tooltips, slight neumorphism, active tab in blue-purple 
+🔹 Center Column (Upload Workflow Section) Title (h1): Upload Contract Subtext: Drag & drop your contract here or browse your files. Upload Zone Card: Centered drop area with dashed border and upload icon (cloud arrow) Button: Browse Files (primary color, rounded) Info below: Accepted: PDF or DOCX · Max 10MB Progress Tracker Bar (4 Steps): ✅ Uploading → 🔍 Validating → 📄 Scanning → 🤖 Extracting Current step highlighted in vibrant gradient (#6366F1 → #3B82F6) File Preview Box: Icon preview, name, size, extension Delete button (icon) Primary CTA Button (Bottom-Center): Start Analysis 
+🔹 Right Column (Whitespace + Minimal Info) Purposefully sparse to convey premium spacious layout Floating card with: Title: Upload Guidelines Icon list: 📄 File Types: PDF, DOCX 🔐 End-to-End Encrypted ⚠️ 10MB Max ⏱️ Avg Time: 10s Light gray background with slight shadow Below: Optional illustration (secure doc scan, AI cloud, etc.) Bottom: Need help? Contact Support (small text, muted) 
+🔹 Header (Top Navigation Bar) Left: Section name (Upload Contract) Right: Notification bell, user avatar dropdown Sticky behavior on scroll 
+🔹 Theme & Style Design Language: Apple / Linear / Dropbox style Fonts: Inter, SF Pro, or Manrope Color Palette: Primary: #3B82F6 or #6366F1 Background: #F9FAFB Text: #111827 (dark) + #6B7280 (muted) Accent gradients for CTA and progress Use soft animations (e.g., progress bar transitions, hover states) 
+🔹 Footer (Optional) Very minimal: Centered text: © 2025 ContractAI. All rights reserved. Font size: 12px, muted gray (#9CA3AF)
+
+
+
+
+A single, ultra-polished SaaS dashboard UI mockup — hero screen: "AI Knowledge Assistant Dashboard" for the fictional product VeritasAI. Produce a crisp, high-resolution vector-style UI (flat + subtle gradients), 16:10 aspect ratio, 3840x2400 resolution. No photos of people. No watermark. Clean modern aesthetic inspired by Stripe Dashboard, Linear, Figma and Notion. Render as a crisp UI mockup with pixel-perfect alignment, consistent 24px baseline grid, and clear hierarchy.
+
+Layout & proportions:
+
+Canvas: 3840x2400, margin 48px outer gutter.
+
+Left vertical sidebar: fixed 280px width, full height. Background: deep navy gradient (#0F1724 → #111827 with very subtle texture). Logo block at top 64px tall showing a simple shield + "V" mark and product name "VeritasAI" to the right; logo gradient fill #2563EB → #7C3AED. Under logo, vertical nav stack of 6 items (Home, Uploads, Chat, Insights, Workflows, Settings). Each nav item: 48px height, icon left (24px line icon), label right (Inter 16 medium), 16px vertical spacing. Home is active: rounded pill background (#111827 → #0B1220, 8px radius) and left accent bar (4px) in primary gradient.
+
+Top navbar: height 88px across remaining width. Left side shows a long search input (center-left) placeholder text: "Search documents or chats..." (Inter 16 regular, 20px height input, radius 12px). Right side: notification bell icon, small ENV tag "Staging" (if present), and circular user avatar with initials "VA" and dropdown caret.
+
+Main content area (center): width 1920px (approx 55% of remaining); left aligned with 40px padding internal. It contains stacked cards:
+
+Document Upload Card (top): centered horizontally in main, size 920px wide x 220px high, dashed rounded border 2px (light gray #E6EEF6), subtle inner drop area icon (cloud + arrow) 56px with soft blue accent. Headline inside: "Upload your documents to get started" (Inter 20 semi-bold). Subtitle small text beneath: "Supported: PDF, DOCX, CSV • Max 20MB per file" (Inter 13 regular, muted #6B7280). Primary CTA button inside card: "Choose files" (120px wide) and secondary text link: "Or drag & drop here".
+
+Chat Card (below upload): full card width 920px, height 520px, 12px radius, background white #FFFFFF, shadow: 0 10px 30px rgba(13,38,64,0.06). Chat header left: small AI badge "VeritasAI Assistant" with small lightning icon. Chat body: scrollable message area with two visible multi-turn messages:
+
+User message bubble (left): rounded 12px, background #EEF2FF, text: "Summarize the refund policy and list action items." Timestamp small right aligned "11:42 AM".
+
+AI response bubble (right): rounded 12px, gradient subtle #F8FAFF → #EFF6FF, box shows formatted answer with a small source citation pill below each paragraph (tiny pill: "Source: contract.pdf • p.7"). AI bubble includes quick action chips below: "Copy", "Save as Insight", "Create Task".
+Chat input: fixed at bottom of this card, 56px height input (placeholder "Ask a question..."), right aligned primary CTA button "Send" (gradient button #3B82F6 → #2563EB, white text, 14px, radius 12px) with subtle hover lift.
+
+Right sidebar: fixed 480px width. Contains three stacked cards:
+
+Recent Uploads (top card): title "Recent Uploads" (Inter 18 semi-bold). Each row: 64px height with file icon left (blue rounded square with white doc glyph), filename (Inter 15), small meta line under (e.g., "contract.pdf — 1h ago"), and status badge on right "Processed" (green #16A34A, tiny dot).
+
+Knowledge Coverage widget (middle): circular progress ring showing 78% with label "Knowledge Coverage" and subtext "78% of documents indexed". Small sparkline below: last 7 days indexing volume.
+
+Tips & Quick Actions (bottom): two columns of small cards — "Suggested queries" with bullets: "What are key obligations?", "What is the warranty period?", and "Generate KYC checklist". Each suggestion is a small pill button; below, a compact "Run analysis" secondary button.
+
+Footer: thin 40px footer inside right side with product version "VeritasAI • v1.0 • © 2025" and tiny help link.
+
+Components, exact copy & microcopy:
+
+Sidebar labels: Home, Uploads, Chat, Insights, Workflows, Settings.
+
+Upload card: headline "Upload your documents to get started", subtitle "Supported: PDF, DOCX, CSV • Max 20MB per file", CTA "Choose files".
+
+Example recent uploads rows:
+
+contract.pdf — 1h ago — Processed
+
+user_manual.docx — 4h ago — Processing
+
+faq.csv — 1d ago — Error (with small retry icon)
+
+Chat sample messages:
+
+User: "Summarize the refund policy and list action items."
+
+AI: "Refunds are processed within 7 days if terms are met. Action items: 1) Verify invoice & return receipt. 2) Confirm condition. 3) Process refund to original payment method. Source: contract.pdf — p.7." (show each action as numbered list; include citation pill under each paragraph)
+
+Buttons & labels:
+
+Primary button style: gradient #3B82F6 → #2563EB, white text, 14px, 12px radius, subtle inner shadow.
+
+Secondary button: white bg, 1px border #E6EEF6, text #374151, 12px radius.
+
+Badges: green success #16A34A; warning #F59E0B; error #EF4444.
+
+Icons: thin line icons, 24px, monochrome #374151; active icon accent gets gradient fill.
+
+Typography: Inter family. Headline H1: Inter 24 semibold (24px). H2 cards: Inter 18 semibold. Body: Inter 15 regular. Small meta: Inter 13 regular #6B7280.
+
+Spacing & token values: base grid 24px. Card inner padding 24px. Vertical gaps between stacked cards 24px. Border radius 12px for cards, 8px for small chips.
+
+Visual design tokens (exact):
+
+Background main: very light gradient #F8FAFF → #FFFFFF
+
+Primary gradient: #3B82F6 → #2563EB
+
+Accent gradient (logo): #2563EB → #7C3AED
+
+Muted text: #6B7280
+
+Strong text: #0F1724
+
+Card shadow: 0 10px 30px rgba(13,38,64,0.06)
+
+Card border: 1px solid rgba(15,23,36,0.04)
+
+Radius: 12px
+
+Interaction hints (visual cues to include):
+
+Show Home nav item highlighted (active).
+
+Show one file with "Processing" animated dot (three dots) — render as static three dots but imply motion.
+
+Show AI response with "source citation" pills under paragraphs.
+
+Include 2 quick action chips under AI response: "Save to Insights" (outlined) and "Create Task" (primary outline).
+
+Show small tooltip hint near upload card: "Pro tip: combine multiple docs for better context."
+
+Negative prompts / things to avoid:
+
+No watermarks, no logos besides the supplied "VeritasAI" logo.
+
+No realistic human faces or photos.
+
+No low-res or blurry rendering; avoid noise or camera effects.
+
+Do not invent any additional text beyond the exact copy given.
+
+No additional UI panels that are not specified.
+
+Avoid overly skeuomorphic or 3D styles — prefer crisp flat + subtle depth.
+
+Final rendering instructions:
+
+Render as a clean, vector UI mockup, not photorealistic. Crisp edges, no photographer lighting. Emphasize readability and hierarchy. Output should resemble a high-fidelity product design screenshot ready for investor slides and handoff to engineers. Center composition, balanced negative space, and consistent alignment across columns.
+
+Suggested seed/settings for best reproducibility:
+
+Aspect ratio: 16:10 (landscape)
+
+Quality: ultra-high, vector/flat style
+
+Render mode: UI mockup / flat design, high detail, 4k

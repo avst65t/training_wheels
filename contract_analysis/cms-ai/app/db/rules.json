@@ -1,0 +1,341 @@
+[
+{"MSA": [
+    {
+      "name": "Parties to the Agreement — Clearly define legal names and roles (Client vs. Service Provider)",
+      "clause_check": "must clearly specify legal names of both Client and Service Provider"
+    },
+    {
+      "name": "Scope of Services — Reference to SOWs or specific project documents; avoid vague descriptions",
+      "clause_check": "must reference SOWs or project documents; should not be vague"
+    },
+    {
+      "name": "Term and Termination — Duration of the MSA; termination for cause/convenience; notice period required",
+      "clause_check": "termination notice period should be at least 30 days"
+    },
+    {
+      "name": "Payment Terms — Invoicing process, payment due date, late fees, taxes, expenses, currency",
+      "clause_check": "payment due date must not exceed 30 days from invoice"
+    },
+    {
+      "name": "Change Management — Process to handle changes to services, scope, cost, or timelines",
+      "clause_check": "all scope or cost changes must require written approval"
+    },
+    {
+      "name": "Confidentiality — Mutual or one-way clause; time duration of obligation; exclusions",
+      "clause_check": "confidentiality obligation must last at least 2 years after termination"
+    },
+    {
+      "name": "Intellectual Property (IP) — Ownership of deliverables; pre-existing IP; licensing or assignment clauses",
+      "clause_check": "ownership of deliverables must be assigned to the Client"
+    },
+    {
+      "name": "Warranties — Quality standards, rework obligations, compliance with laws",
+      "clause_check": "services must comply with applicable laws and professional standards"
+    },
+    {
+      "name": "Indemnity — Who indemnifies whom, and for what (e.g., IP infringement, third-party claims)",
+      "clause_check": "service provider must indemnify client for third-party IP infringement claims"
+    },
+    {
+      "name": "Limitation of Liability — Cap on damages (e.g., fees paid in 12 months), exclusion of indirect/consequential damages",
+      "clause_check": "liability cap must be at least equal to 12 months of fees"
+    },
+    {
+      "name": "Dispute Resolution — Governing law, jurisdiction, mediation/arbitration before litigation",
+      "clause_check": "must specify governing law and arbitration before litigation"
+    },
+    {
+      "name": "Insurance Requirements — Minimum coverage levels, proof of insurance, types of policies",
+      "clause_check": "provider must maintain minimum insurance coverage of $1,000,000"
+    },
+    {
+      "name": "Subcontracting — Permission or restriction, responsibility for subcontractor actions",
+      "clause_check": "subcontracting requires prior written consent of the client"
+    },
+    {
+      "name": "Force Majeure — Coverage for unexpected events (natural disasters, strikes, etc.)",
+      "clause_check": "clause must cover natural disasters and strikes as valid events"
+    },
+    {
+      "name": "Audit Rights — Client’s right to audit compliance, data security, or invoices",
+      "clause_check": "client must have right to audit provider’s compliance at least annually"
+    },
+    {
+      "name": "Non-Solicitation — Restriction on hiring each other's employees for a defined time",
+      "clause_check": "must restrict hiring of each other's employees for at least 12 months"
+    },
+    {
+      "name": "Amendment Clause — Written amendments only; signed by authorized representatives",
+      "clause_check": "amendments must be in writing and signed by both parties"
+    },
+    {
+      "name": "Entire Agreement — Clause stating that MSA + SOWs form the complete agreement",
+      "clause_check": "must state that MSA and SOWs form the complete agreement"
+    }
+  ]
+},
+
+{"NDA": [
+    {
+      "name": "Parties to the Agreement — Clearly identify disclosing and receiving parties",
+      "clause_check": "must clearly specify both disclosing and receiving parties"
+    },
+    {
+      "name": "Definition of Confidential Info — Broad but reasonable; includes tangible and intangible information",
+      "clause_check": "definition must include both tangible and intangible information"
+    },
+    {
+      "name": "Purpose — Clarifies why information is being disclosed (e.g., evaluation, negotiation, partnership)",
+      "clause_check": "purpose must be explicitly stated and not left vague"
+    },
+    {
+      "name": "Obligations of Receiving Party — Duty to protect, use limitations, and restrict disclosures to internal personnel",
+      "clause_check": "receiving party must limit disclosure to internal personnel only"
+    },
+    {
+      "name": "Exclusions — Common exclusions: publicly available, independently developed, legally disclosed",
+      "clause_check": "exclusions must include publicly available and independently developed information"
+    },
+    {
+      "name": "Term of Agreement — Duration of NDA obligation (e.g., 2–5 years); may differ from term of the relationship",
+      "clause_check": "term must be at least 2 years from effective date"
+    },
+    {
+      "name": "Return/Destruction — Obligation to return or destroy confidential info upon request or termination",
+      "clause_check": "confidential information must be returned or destroyed upon request"
+    },
+    {
+      "name": "No License Granted — Clarifies that no IP or rights are transferred through disclosure",
+      "clause_check": "must state explicitly that no IP rights are granted"
+    },
+    {
+      "name": "Remedies — Injunctive relief and legal remedies in case of breach",
+      "clause_check": "remedies must include injunctive relief for breach"
+    },
+    {
+      "name": "Governing Law — Jurisdiction under which the NDA will be interpreted and enforced",
+      "clause_check": "must specify governing law and jurisdiction"
+    }
+  ]
+},
+
+{"SOW": [
+    {
+      "name": "Project Title and Parties — Clear identification of SOW, parties, and reference to governing MSA",
+      "clause_check": "must clearly specify project title, parties, and reference to MSA"
+    },
+    {
+      "name": "Scope of Services — Detailed description of deliverables, tasks, and objectives",
+      "clause_check": "scope must include clear deliverables and objectives"
+    },
+    {
+      "name": "Project Timeline — Start and end dates, key milestones, dependencies",
+      "clause_check": "must specify both start and end dates"
+    },
+    {
+      "name": "Deliverables — Detailed listing of all outputs with acceptance criteria",
+      "clause_check": "all deliverables must have defined acceptance criteria"
+    },
+    {
+      "name": "Assumptions and Constraints — Operational or client-specific dependencies",
+      "clause_check": "assumptions must list key client dependencies explicitly"
+    },
+    {
+      "name": "Roles and Responsibilities — Who is doing what on client and vendor sides",
+      "clause_check": "roles must clearly define both client and vendor responsibilities"
+    },
+    {
+      "name": "Resource Plan — Designation of named or unnamed personnel and roles, if applicable",
+      "clause_check": "must specify named or role-based personnel assignments"
+    },
+    {
+      "name": "Payment Schedule — Milestone-based, T&M, or fixed fee; invoicing terms",
+      "clause_check": "payment schedule must align with milestones or defined terms"
+    },
+    {
+      "name": "Change Control Process — Process to manage out-of-scope work or timeline/cost changes",
+      "clause_check": "must require written approval for scope or cost changes"
+    },
+    {
+      "name": "Acceptance Criteria — How work will be reviewed and approved by the client",
+      "clause_check": "acceptance criteria must include client sign-off process"
+    },
+    {
+      "name": "Reporting and Governance — Frequency and format of status updates, escalation matrix, stakeholder roles",
+      "clause_check": "must specify reporting frequency and escalation matrix"
+    },
+    {
+      "name": "Termination Clause — Right to terminate SOW separately from MSA, along with consequences",
+      "clause_check": "must specify conditions for terminating SOW independently of MSA"
+    }
+  ]
+},
+
+{"PSA": [
+    {
+      "name": "Parties to the Agreement — Clearly identify legal names, registered addresses, and specific roles (Client, Consultant, Service Provider)",
+      "clause_check": "must specify full legal names and roles of all parties"
+    },
+    {
+      "name": "Scope of Work / Services — Define detailed deliverables, timelines, and responsibilities; reference specific SOWs; avoid ambiguous terms",
+      "clause_check": "scope must include deliverables and timelines, not vague terms"
+    },
+    {
+      "name": "Service Levels & KPIs — Specify measurable performance standards (e.g., response time, defect rates, milestones) and remedies for non-compliance",
+      "clause_check": "must define at least one measurable KPI or performance standard"
+    },
+    {
+      "name": "Term and Termination — Duration of the PSA; renewal conditions; termination for cause, convenience, or prolonged non-performance; notice requirements",
+      "clause_check": "termination notice period must be at least 30 days"
+    },
+    {
+      "name": "Fees and Payment Terms — Rate structure (hourly, daily, milestone-based); invoicing procedure; payment timelines; expenses; taxes; currency; escalation for late payment",
+      "clause_check": "payment terms must not exceed 30 days from invoice"
+    },
+    {
+      "name": "Change Control — Documented process for approving changes in deliverables, timelines, or costs; authorization levels",
+      "clause_check": "all changes must be formally approved in writing"
+    },
+    {
+      "name": "Confidentiality & Data Protection — Non-disclosure obligations; duration; permitted disclosures; data privacy compliance (GDPR, CCPA, etc.)",
+      "clause_check": "confidentiality must last at least 2 years and comply with data protection laws"
+    },
+    {
+      "name": "Intellectual Property Rights — Ownership of work product; use of pre-existing IP; licensing rights; transfer/assignment provisions",
+      "clause_check": "ownership of deliverables must be assigned to the client"
+    },
+    {
+      "name": "Warranties & Representations — Compliance with industry standards; lawful performance; accuracy of deliverables; rework obligations",
+      "clause_check": "services must comply with laws and industry standards"
+    },
+    {
+      "name": "Indemnification — Scope of indemnities (e.g., IP infringement, negligence, third-party claims); defense obligations; cost coverage",
+      "clause_check": "service provider must indemnify client against third-party IP infringement claims"
+    },
+    {
+      "name": "Limitation of Liability — Caps on damages; exclusions for indirect damages; carve-outs for intentional misconduct or confidentiality breaches",
+      "clause_check": "liability cap must be at least equal to 12 months of fees"
+    },
+    {
+      "name": "Dispute Resolution — Escalation process; mediation/arbitration clauses; governing law and jurisdiction; legal venue",
+      "clause_check": "must specify governing law and arbitration before litigation"
+    },
+    {
+      "name": "Insurance Requirements — Minimum insurance levels; proof of coverage; relevant policy types (professional liability, cyber, general liability)",
+      "clause_check": "provider must maintain minimum insurance coverage of $1,000,000"
+    },
+    {
+      "name": "Subcontracting & Assignment — Restrictions on subcontracting; prior approval needed; responsibility for subcontractors’ performance",
+      "clause_check": "subcontracting requires prior written consent from client"
+    },
+    {
+      "name": "Force Majeure — Excuses performance for unforeseeable events (natural disasters, political unrest, pandemics, etc.); notice requirements",
+      "clause_check": "must explicitly include natural disasters and pandemics as valid events"
+    },
+    {
+      "name": "Audit & Inspection Rights — Client’s rights to review performance, security compliance, and billing accuracy",
+      "clause_check": "client must have audit rights at least annually"
+    },
+    {
+      "name": "Non-Solicitation / Non-Compete — Restrictions on recruiting each other’s employees or soliciting business from clients for a defined period",
+      "clause_check": "must restrict employee solicitation for at least 12 months"
+    },
+    {
+      "name": "Compliance with Laws — Adherence to applicable labor, export control, anti-bribery, and data protection laws",
+      "clause_check": "provider must comply with all applicable laws and regulations"
+    },
+    {
+      "name": "Amendments & Waivers — All modifications in writing; signed by authorized representatives; waiver clauses",
+      "clause_check": "amendments must be in writing and signed by both parties"
+    },
+    {
+      "name": "Entire Agreement — States PSA (plus applicable SOWs) constitutes the full agreement; supersedes prior discussions or documents",
+      "clause_check": "must state PSA and SOWs form the complete agreement"
+    }
+  ]
+},
+
+{"OTHERS": [
+    {
+      "name": "Parties to the Agreement — Clearly state legal names, addresses, and roles of each party",
+      "clause_check": "must clearly specify legal names and roles of all parties"
+    },
+    {
+      "name": "Purpose / Scope — Briefly define what the agreement is about and its intended scope",
+      "clause_check": "purpose must be explicitly defined and not vague"
+    },
+    {
+      "name": "Term & Termination — Duration of the agreement, renewal conditions, termination rights, and notice period",
+      "clause_check": "termination notice period should be at least 30 days"
+    },
+    {
+      "name": "Fees / Payment Terms — Payment structure, invoicing process, due dates, late fees, and applicable taxes",
+      "clause_check": "payment due date must not exceed 30 days from invoice"
+    },
+    {
+      "name": "Change Management — Process to request and approve changes in scope, cost, or timelines",
+      "clause_check": "changes must require prior written approval"
+    },
+    {
+      "name": "Confidentiality — Obligations to protect information, permitted disclosures, and duration of confidentiality",
+      "clause_check": "confidentiality obligation must last at least 2 years after termination"
+    },
+    {
+      "name": "Intellectual Property Rights — Ownership of deliverables, pre-existing IP, and licensing terms",
+      "clause_check": "ownership of deliverables must be assigned to the client"
+    },
+    {
+      "name": "Warranties & Representations — Quality standards, compliance with laws, and accuracy of information",
+      "clause_check": "services must comply with applicable laws and professional standards"
+    },
+    {
+      "name": "Indemnification — Responsibility for losses, damages, or third-party claims",
+      "clause_check": "service provider must indemnify client for third-party claims"
+    },
+    {
+      "name": "Limitation of Liability — Caps on damages and exclusions for indirect/consequential losses",
+      "clause_check": "liability cap must be at least equal to 12 months of fees"
+    },
+    {
+      "name": "Compliance with Laws — Adherence to relevant laws and regulations (e.g., labor, data privacy)",
+      "clause_check": "agreement must require compliance with applicable laws and regulations"
+    },
+    {
+      "name": "Dispute Resolution — Governing law, jurisdiction, and process for resolving disputes (mediation/arbitration)",
+      "clause_check": "must specify governing law and arbitration before litigation"
+    },
+    {
+      "name": "Insurance — Minimum coverage requirements and proof of insurance",
+      "clause_check": "provider must maintain minimum insurance coverage of $1,000,000"
+    },
+    {
+      "name": "Subcontracting / Assignment — Rules for engaging subcontractors or transferring obligations",
+      "clause_check": "subcontracting or assignment requires prior written consent of the client"
+    },
+    {
+      "name": "Force Majeure — Protection from liability for events beyond reasonable control",
+      "clause_check": "clause must cover natural disasters and strikes as valid events"
+    },
+    {
+      "name": "Audit Rights — Rights to verify compliance, performance, or billing",
+      "clause_check": "client must have right to audit provider’s compliance at least annually"
+    },
+    {
+      "name": "Non-Solicitation / Non-Compete — Restrictions on hiring or competing with the other party",
+      "clause_check": "must restrict hiring of each other's employees for at least 12 months"
+    },
+    {
+      "name": "Amendments — All changes must be in writing and signed by authorized representatives",
+      "clause_check": "amendments must be in writing and signed by both parties"
+    },
+    {
+      "name": "Entire Agreement — States that this agreement (plus attachments) is the full understanding between the parties",
+      "clause_check": "must state that the agreement and attachments form the complete agreement"
+    },
+    {
+      "name": "Signatures — Names, titles, and dates for authorized signatories of each party",
+      "clause_check": "must include names, titles, and dates of all signatories"
+    }
+  ]
+}
+]

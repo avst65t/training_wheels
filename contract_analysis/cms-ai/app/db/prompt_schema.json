@@ -1,0 +1,85 @@
+[[
+    {
+        "document_type": "NDA",
+        "extraction_rules": "Parties to the Agreement: Clearly identify disclosing and receiving parties. Definition of Confidential Info: Broad but reasonable; includes tangible and intangible information. Purpose: Clarifies why information is being disclosed (e.g., evaluation, negotiation, partnership). Obligations of Receiving Party: Duty to protect, use limitations, and restrict disclosures to internal personnel. Exclusions: Common exclusions: publicly available, independently developed, legally disclosed. Term of Agreement: Duration of NDA obligation (e.g., 2–5 years); may differ from term of the relationship. Return/Destruction: Obligation to return or destroy confidential info upon request or termination. No License Granted: Clarifies that no IP or rights are transferred through disclosure. Remedies: Injunctive relief and legal remedies in case of breach. Governing Law: Jurisdiction under which the NDA will be interpreted and enforced.",
+        "output_format": "{\"extracted_parameters\": {\"parties_to_the_agreement\": {\"value\": {\"disclosing_party\": \"\", \"receiving_party\": \"\"}, \"source_sentence\": \"\"}, \"definition_of_confidential_info\": {\"value\": \"\", \"source_sentence\": \"\"}, \"purpose\": {\"value\": \"\", \"source_sentence\": \"\"}, \"obligations_of_receiving_party\": {\"value\": [], \"source_sentence\": \"\"}, \"exclusions\": {\"value\": [], \"source_sentence\": \"\"}, \"term_of_agreement\": {\"value\": \"\", \"source_sentence\": \"\"}, \"return_or_destruction\": {\"value\": [], \"source_sentence\": \"\"}, \"no_license_granted\": {\"value\": \"\", \"source_sentence\": \"\"}, \"remedies\": {\"value\": [], \"source_sentence\": \"\"}, \"governing_law\": {\"value\": \"\", \"source_sentence\": \"\"}}}"
+    },
+    {
+        "document_type": "MSA",
+        "extraction_rules": "Parties to the Agreement: Clearly define legal names and roles (Client vs. Service Provider). Scope of Services: Reference to SOWs or specific project documents; avoid vague descriptions. Term and Termination: Duration of the MSA; termination for cause/convenience; notice period required. Payment Terms: Invoicing process, payment due date, late fees, taxes, expenses, currency. Change Management: Process to handle changes to services, scope, cost, or timelines. Confidentiality: Mutual or one-way clause; time duration of obligation; exclusions. Intellectual Property (IP): Ownership of deliverables; pre-existing IP; licensing or assignment clauses. Warranties: Quality standards, rework obligations, compliance with laws. Indemnity: Who indemnifies whom, and for what (e.g., IP infringement, third-party claims). Limitation of Liability: Cap on damages (e.g., fees paid in 12 months), exclusion of indirect/consequential damages. Dispute Resolution: Governing law, jurisdiction, mediation/arbitration before litigation. Insurance Requirements: Minimum coverage levels, proof of insurance, types of policies. Subcontracting: Permission or restriction, responsibility for subcontractor actions. Force Majeure: Coverage for unexpected events (natural disasters, strikes, etc.). Audit Rights: Client’s right to audit compliance, data security, or invoices. Non-Solicitation: Restriction on hiring each other's employees for a defined time. Amendment Clause: Written amendments only; signed by authorized representatives. Entire Agreement: Clause stating that MSA + SOWs form the complete agreement.",
+        "output_format": "{\"extracted_parameters\": {\"parties_to_the_agreement\": {\"value\": {\"client\": \"\", \"service_provider\": \"\"}, \"source_sentence\": \"\"}, \"scope_of_services\": {\"value\": [], \"source_sentence\": \"\"}, \"term_and_termination\": {\"value\": {\"duration\": \"\", \"termination_for_cause\": \"\", \"termination_for_convenience\": \"\", \"notice_period\": \"\"}, \"source_sentence\": \"\"}, \"payment_terms\": {\"value\": {\"invoicing_process\": \"\", \"payment_due_date\": \"\", \"late_fees\": \"\", \"taxes\": \"\", \"expenses\": \"\", \"currency\": \"\"}, \"source_sentence\": \"\"}, \"change_management\": {\"value\": \"\", \"source_sentence\": \"\"}, \"confidentiality\": {\"value\": {\"type\": \"\", \"duration\": \"\", \"exclusions\": []}, \"source_sentence\": \"\"}, \"intellectual_property\": {\"value\": {\"ownership_of_deliverables\": \"\", \"pre_existing_ip\": \"\", \"licensing_or_assignment\": \"\"}, \"source_sentence\": \"\"}, \"warranties\": {\"value\": [], \"source_sentence\": \"\"}, \"indemnity\": {\"value\": {\"indemnifying_party\": \"\", \"indemnified_party\": \"\", \"covered_areas\": []}, \"source_sentence\": \"\"}, \"limitation_of_liability\": {\"value\": {\"cap_on_damages\": \"\", \"exclusions\": []}, \"source_sentence\": \"\"}, \"dispute_resolution\": {\"value\": {\"governing_law\": \"\", \"jurisdiction\": \"\", \"process\": []}, \"source_sentence\": \"\"}, \"insurance_requirements\": {\"value\": {\"minimum_coverage_levels\": \"\", \"proof_of_insurance\": \"\", \"types_of_policies\": []}, \"source_sentence\": \"\"}, \"subcontracting\": {\"value\": \"\", \"source_sentence\": \"\"}, \"force_majeure\": {\"value\": [], \"source_sentence\": \"\"}, \"audit_rights\": {\"value\": [], \"source_sentence\": \"\"}, \"non_solicitation\": {\"value\": {\"restriction_details\": \"\", \"duration\": \"\"}, \"source_sentence\": \"\"}, \"amendment_clause\": {\"value\": \"\", \"source_sentence\": \"\"}, \"entire_agreement\": {\"value\": \"\", \"source_sentence\": \"\"}}}"
+    },
+    {
+        "document_type": "SOW",
+        "extraction_rules": "",
+        "output_format": "{\"extracted_parameters\": {\"project_title_and_parties\": {\"value\": {\"project_title\": \"\", \"parties\": []}, \"source_sentence\": \"\"}, \"scope_of_services\": {\"value\": [], \"source_sentence\": \"\"}, \"project_timeline\": {\"value\": {\"start_date\": \"\", \"end_date\": \"\", \"milestones\": []}, \"source_sentence\": \"\"}, \"deliverables\": {\"value\": [], \"source_sentence\": \"\"}, \"assumptions_and_constraints\": {\"value\": [], \"source_sentence\": \"\"}, \"roles_and_responsibilities\": {\"value\": {\"client\": [], \"vendor\": []}, \"source_sentence\": \"\"}, \"resource_plan\": {\"value\": [], \"source_sentence\": \"\"}, \"payment_schedule\": {\"value\": {\"type\": \"\", \"details\": \"\"}, \"source_sentence\": \"\"}, \"change_control_process\": {\"value\": \"\", \"source_sentence\": \"\"}, \"acceptance_criteria\": {\"value\": [], \"source_sentence\": \"\"}, \"reporting_and_governance\": {\"value\": {\"frequency\": \"\", \"format\": \"\", \"stakeholder_roles\": []}, \"source_sentence\": \"\"}, \"termination_clause\": {\"value\": \"\", \"source_sentence\": \"\"}}}"
+    },
+    {
+        "document_type": "PSA",
+        "extraction_rules": "Extract professional services description, Identify consultant qualifications and credentials, Find service level agreements and metrics, Extract fee structure and billing terms, Identify professional standards and compliance",
+        "output_format": "{\"extracted_parameters\": {\"professional_services_description\": {\"value\": [], \"source_sentence\": \"\"}, \"consultant_qualifications_and_credentials\": {\"value\": [], \"source_sentence\": \"\"}, \"service_level_agreements_and_metrics\": {\"value\": [], \"source_sentence\": \"\"}, \"fee_structure_and_billing_terms\": {\"value\": {\"\": \"\"}, \"source_sentence\": \"\"}, \"professional_standards_and_compliance\": {\"value\": [], \"source_sentence\": \"\"}}}"
+    },
+    {
+        "document_type": "Others",
+        "extraction_rules": "Extract all involved parties and their roles, Identify the main purpose and scope of the agreement, Find start and end dates, Extract key obligations and responsibilities of each party, Identify payment terms, Find clauses on dispute resolution or governing law, Extract termination conditions",
+        "output_format": "{\"extracted_parameters\": {\"involved_parties_and_roles\": {\"value\": [], \"source_sentence\": \"\"}, \"purpose_and_scope_of_agreement\": {\"value\": \"\", \"source_sentence\": \"\"}, \"start_date\": {\"value\": \"\", \"source_sentence\": \"\"}, \"end_date\": {\"value\": \"\", \"source_sentence\": \"\"}, \"key_obligations_and_responsibilities\": {\"value\": [], \"source_sentence\": \"\"}, \"payment_terms\": {\"value\": \"\", \"source_sentence\": \"\"}, \"dispute_resolution_or_governing_law\": {\"value\": \"\", \"source_sentence\": \"\"}, \"termination_conditions\": {\"value\": \"\", \"source_sentence\": \"\"}}}"
+    }
+],
+[
+  {
+    "user": {
+      "message": "{\"content\": \"${context}\"}",
+      "keys": ["context"]
+    },
+    "system": {
+      "role": "You are an expert in document classification analyst.",
+      "instructions": "Your job is to analyze the document text, identify its type and whether the document contains more than one of the valid types (e.g., a SOW section within an MSA). You must only consider the following valid document types: NDA (Non-Disclosure Agreement), MSA (Master Service Agreement), SOW (Statement of Work), PSA (Professional Services Agreement).",
+      "input_format": "You will get input, which is the document text, in this format: {\"content\": \"***document text***\"}",
+      "output_format": "{\"primary_type\": \"document_type\", \"has_multiple_types\": Boolean, \"detected_types\": [\"type1\", \"type2\"], \"confidence\": *how confident are you (between 0.0 & 1.0)}",
+      "notes": "The provided output_format is only for your reference and understanding only. Return only the JSON object in the exact format below and no extra commentary, self referential statements or explanation.",
+      "fallback": "Do not guess. If the text does not clearly match any of the four types, return this result {\"primary_type\": \"Others\", \"detected_types\": [\"Others\"]}"
+    }
+  },
+  {
+    "user": {
+      "message": "{\"content\": \"${context}\",\n    \"document_types\": \"${document_types}\"\n}\n\n",
+      "keys": ["context", "document_types"]
+    },
+    "system": {
+      "role": "You are an expert in document structure separator.",
+      "instructions": "Please identify the exact starting & ending sentences, punctuations for each document type so they can be separated using regex. Return your response in the JSON format as per the example format. Each section must have a clear start and end sentence. Do not assume section boundaries - use exact words and punctuation from text.",
+      "input_format": "You will get input, which is the document text and document types, in this format: {\"content\": \"***document text***\", \"document_types\": \"***list of document types***\"}",
+      "output_format": "{\"splits\": [{\"document_type\": \"NDA\", \"start_sentence\": \"***exact starting sentence of NDA section***\", \"end_sentence\": \"***exact ending sentence of NDA section***\"}, {\"document_type\": \"SOW\", \"start_sentence\": \"***exact starting sentence of SOW section***\", \"end_sentence\": \"***exact ending sentence of SOW section***\"}]}",
+      "notes": "The provided output_format is only for your reference and understanding only. Return only the JSON object in the exact format below and no extra commentary, self referential statements or explanation.",
+      "fallback": "Do not guess. If no valid splits can be determined from the text, return the full content boundaries instead. For this case, set \"split_start\" to the start of the content and \"split_end\" to the end of the content in the desired output format."
+    }
+  },
+  {
+    "user": {
+      "message": "{\"document_text\": \"${document_text}\", \"extraction_parameters\": \"${extraction_rules}\"}",
+      "keys": ["document_text", "extraction_parameters"]
+    },
+    "system": {
+      "role": "You are an expert in legal document analysis.",
+      "instructions": "For each parameter, If the parameter contains multiple items (e.g., a list of services, pricing breakdowns, or multiple signatories), return them as a structured list or dictionary, not as a flat string. Use meaningful labels or keys if possible (e.g., 'Cloud Management', 'Software Development'). If only one value exists, you may return a string. Always include the source_sentence exactly as in the contract (do not paraphrase or add any unecessary symbol). Keep formatting, punctuation, and bullet points as-is in the source sentence for regex purpose. Do not invent or summarize values. Extract only what's in the text. Never merge unrelated items into one string. Always use lists or dictionaries when structure is implied by formatting or commas. Use structured output only when appropriate. Do not wrap single values in arrays or dicts unless required.",
+      "input_format": "You will get input in this format: {\"document_text\": \"***full contract text***\", \"extraction_parameters\": \"***parameters to extract***\"}",
+      "notes": "The provided output_format is only for your reference and understanding only. Return only the JSON object in the exact format below and no extra commentary, self referential statements or explanation.",
+      "fallback": "Do not guess. If you cannot confidently extract any parameter, return an empty object for that parameter while keeping the correct JSON structure."
+    }
+  },
+  {
+    "user": {
+      "message": "{\"document_text\": \"${document_text}\"}",
+      "keys": ["document_text"]
+    },
+    "system": {
+      "role": "You are an expert contract analyst preparing an executive summary.",
+      "instructions": "Your task is to create an insightful summary of a legal contract. DO NOT mention already extracted parameters in your summary. Focus only on additional insightful content in the document. Summarize hidden insights, fine print, and clauses that may be important but were not extracted earlier. Use a clean, bullet-point format, grouped under dynamic sections based on what the document contains. Do not hardcode section titles, generate them based on actual content. Use clear and simple business/legal language. The tone should be executive and direct - no generic phrases like “this document includes...”. Keep it structured, insightful, and skimmable, think like a contract analyst preparing notes for leadership.",
+      "input_format": "You will get input in this format: {\"document_text\": \"***full contract text***\"}",
+      "output_format": "Legal Framework\\n*detailed insightful bullet pointers*\\n\\nConfidentiality\\n*detailed insightful bullet pointers*\\n\\nSLAs & Performance\\n*detailed insightful bullet pointers*\\n\\nAnnexes\\n*detailed insightful bullet pointers*",
+      "notes": "The provided output_format is only for your reference and understanding only. Generate section titles dynamically based on the actual document content. Return only the summary in the specified format.",
+      "fallback": "Do not guess. If you cannot identify any valid insights, provide a general summary for full contract text in the correct output format."
+    }
+  }
+]
+]

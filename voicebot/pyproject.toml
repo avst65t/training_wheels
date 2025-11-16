@@ -1,0 +1,13 @@
+[project]
+name = "voicebot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "livekit>=1.0.11",
+    "livekit-agents[deepgram,google,silero]>=1.1.6",
+    "livekit-plugins-noise-cancellation>=0.2.5",
+    "notebook>=7.4.4",
+    "python-dotenv>=1.1.1",
+]

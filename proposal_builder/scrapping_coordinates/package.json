@@ -1,0 +1,10 @@
+{
+  "name": "layout-extractor",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node extract-layout.js"
+  },
+  "dependencies": {
+    "puppeteer": "^22.8.2"
+  }
+}

@@ -1,0 +1,177 @@
+Transcript: Requirement Discussion Call – AI Project
+
+Participants
+Neha (CEO of a retail chain)
+Vikram (Head of Marketing)
+Sonia (Head of IT)
+Arjun (Agency Project Lead)
+Priya (Agency Business Analyst)
+Karan (Agency AI/Tech Lead)
+
+Start of Call
+
+Neha: Hi everyone, thanks for making time. We’ve been discussing internally that AI is no longer optional for us. We want to figure out where to start, what exactly to build, and how.
+
+Arjun: Thanks, Neha. Maybe we can begin with your main objectives. Are you looking at AI for customer engagement, operations, or analytics?
+
+Neha: A bit of all three, honestly. But the most pressing pain is customer experience. Our retail stores are doing okay, but online sales are inconsistent. Customers drop off mid-purchase. We’re thinking of AI for personalization and support.
+
+Vikram: From a marketing perspective, yes, we struggle with customer retention. We send mass email campaigns, but they don’t convert much. We’d like to segment and target smarter.
+
+Sonia: And from IT’s side, we’ve been piloting some basic chatbots, but they are rule-based and can’t handle real questions. Customers get frustrated.
+
+Priya: Understood. So, first big area is AI-powered personalization and customer support. Can you tell us what channels you want to cover? Web, mobile app, social media?
+
+Vikram: All three. Our website is the main sales channel. The mobile app is new, only 20% of customers use it. On social, most queries come via WhatsApp and Instagram.
+
+Karan: If we build an AI-driven recommendation system, would you want it integrated with both website and app?
+
+Neha: Yes, and eventually in-store as well. If customers visit a store, staff should know their preferences too.
+
+Arjun: So we are talking about a unified customer profile that can power both online and offline experiences.
+
+Neha: Exactly.
+
+Priya: That means we need to collect and unify data from multiple sources. What systems are you currently using for CRM and sales?
+
+Sonia: Our CRM is Salesforce. For e-commerce, we use Magento. For POS at stores, it’s a custom-built system.
+
+Karan: We can integrate all three into a single data warehouse, then build AI models on top.
+
+Vikram: Will that mean real-time recommendations? Like if a customer browses shoes, we show matching accessories?
+
+Karan: Yes. We can build a recommendation engine that analyzes browsing history, past purchases, and similar customer behavior.
+
+Arjun: Okay, let’s break this into modules. One is personalization and recommendation. Another is customer support chatbot. And third could be predictive analytics for sales and inventory.
+
+Neha: Predictive inventory is very important. Last year we had massive stockouts during Diwali.
+
+Sonia: We often don’t know which products to restock. Inventory planning is mostly guesswork.
+
+Priya: If we build a demand forecasting model, would you like weekly or daily predictions?
+
+Neha: Weekly is fine to start.
+
+Karan: We can also add anomaly detection. If some product suddenly spikes in demand, the system can flag it.
+
+Vikram: That would be helpful. Sometimes a celebrity posts about a product, and we are caught off guard.
+
+Arjun: Coming back to customer support. You mentioned rule-based bots failing. Would you prefer an AI conversational assistant that can answer FAQs, track orders, and even recommend products?
+
+Sonia: Yes, but it must be multilingual. Many customers ask in Hindi, some in Tamil.
+
+Karan: We can handle multiple Indian languages. We’ll use an LLM fine-tuned for retail domain, and integrate it with your knowledge base.
+
+Neha: And will the AI hand over to a human agent if it can’t answer?
+
+Priya: Definitely. That’s standard practice. The bot handles common cases, humans handle complex ones.
+
+Vikram: What about voice? Customers often call helplines.
+
+Karan: That’s another channel. We can build a voicebot using speech-to-text and text-to-speech.
+
+Neha: That’s interesting. But maybe we can start with chat first, then expand to voice.
+
+Arjun: That makes sense. Let’s not overload phase one.
+
+Sonia: On the infrastructure side, do you recommend cloud?
+
+Karan: Yes, cloud is best for AI workloads. Do you already use AWS or Azure?
+
+Sonia: We use AWS for most things.
+
+Karan: Perfect. We can use AWS SageMaker for model training, and deploy APIs behind your web and app.
+
+Priya: Another question: Do you have enough historical data to train recommendation and forecasting models?
+
+Sonia: For e-commerce, yes, we have three years of data. For in-store, data is less structured.
+
+Karan: We can clean and merge both. The more data, the better the models.
+
+Neha: I want to ensure data privacy. Customers are sensitive about how their data is used.
+
+Arjun: We’ll comply with data protection rules. Recommendations will be anonymized, and no personal data shared outside.
+
+Vikram: Okay, let’s talk about metrics. What results should we expect?
+
+Priya: For personalization, increase in average order value and reduced cart abandonment. For chatbot, faster response times and reduced support costs. For forecasting, lower stockouts and better inventory turnover.
+
+Neha: That’s clear.
+
+Karan: Let’s also discuss integration with marketing campaigns. Do you want AI to suggest which customers to target for discounts?
+
+Vikram: Yes, that’s a must. Right now we blast offers to everyone. If AI can identify who is likely to buy, our campaigns will be cheaper and more effective.
+
+Priya: That’s called propensity modeling. We can build it into the system.
+
+Sonia: One concern: If we add too many features at once, IT team might struggle.
+
+Arjun: Agreed. We should phase it. Maybe first build the data warehouse, then recommendation, then chatbot, then forecasting.
+
+Neha: That’s a good sequence. Data foundation first.
+
+Karan: For the chatbot, do you want it embedded in your website and app, or also integrated with WhatsApp?
+
+Meera: Sorry, Meera?
+
+Arjun: I think he meant Neha.
+
+Karan: Apologies, yes, Neha.
+
+Neha: Both website and WhatsApp are important. App is smaller audience but should also have it.
+
+Vikram: We should prioritize WhatsApp because most customers use it.
+
+Sonia: True. But WhatsApp Business API has message costs.
+
+Karan: We’ll factor that in.
+
+Arjun: Another area is image search. Customers could upload a photo of a product and find similar items.
+
+Vikram: That’s a brilliant idea. We’ve seen Amazon use that.
+
+Neha: That could really improve customer experience.
+
+Priya: So we’ll add visual search to roadmap, maybe phase two.
+
+Sonia: Agreed.
+
+Karan: Do you also want fraud detection? For example, fake return requests?
+
+Rohit: We don’t have Rohit here.
+
+Neha: Yes, fraud is a problem. Customers sometimes return used products claiming defects.
+
+Karan: AI can analyze return patterns and flag suspicious cases.
+
+Vikram: That would save a lot of money.
+
+Arjun: We’re covering a lot. Let’s summarize modules:
+
+1. Data warehouse and integration.
+2. Personalization and recommendation.
+3. AI chatbot for website, app, WhatsApp.
+4. Demand forecasting and anomaly detection.
+5. Propensity modeling for campaigns.
+6. Visual search.
+7. Fraud detection.
+
+Neha: That sounds comprehensive.
+
+Priya: Any specific languages for chatbot besides Hindi and Tamil?
+
+Vikram: Maybe Bengali too.
+
+Karan: That can be added.
+
+Neha: One last point. Can the AI provide store managers with insights like "your store is underperforming compared to others"?
+
+Karan: Yes, with dashboards and benchmarks.
+
+Sonia: That would motivate teams.
+
+Arjun: Great. I think we have covered all key requirements.
+
+Neha: Thanks everyone. This was very useful.
+
+End of Call

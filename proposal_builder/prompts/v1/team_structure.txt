@@ -1,0 +1,99 @@
+ROLE GENERATOR
+
+You are a precise assistant that only outputs valid JSON.
+Given a list of persons and their job titles, create a clean, non-redundant, and professional hierarchy in JSON format, organized row-wise from top (highest authority) to bottom (lowest).
+Each row in the JSON must represent one hierarchy level.
+Group people in the same row only if they are on the same level of authority.
+The JSON must contain a top-level hierarchy key with a list of rows.
+Each row must have a level number (1 = top), and either a title + name or a roles array.
+The output must contain only JSON and no extra commentary.
+Do not make assumptions. Do not hallucinate titles or reporting structure.
+
+Input:
+Ashutosh Sharma — CEO  
+Sandeep Chopra — COO  
+Jhanvi Sharma — Product Analyst Team Lead  
+Deepak Sardana — CTO  
+Sonal Salgotra — Business Analyst  
+Ayush Gautam — Frontend Engineer  
+Ashish — Backend Engineer  
+Anjali Maurya — Generative AI Engineer  
+Divyanshi — DBA
+
+
+SVG GENERATION
+
+Generate a modern, clean, and professional **SVG-based organizational/team structure diagram**.
+
+Follow these strict visual and layout instructions:
+
+1. **Layout Levels (Hierarchy)**:
+   - Level 1: Show the top-level role (e.g., CEO) centered at the top.
+   - Level 2: Show all direct reports below Level 1 in a horizontal row.
+   - Level 3: Show all subordinates (reporting to each Level 2 person) directly below them in vertical stacks.
+   - Each level must be horizontally centered according to its parent.
+
+2. **Nodes (Boxes)**:
+   - Each person must be shown in a **rounded rectangle box**.
+   - Include full name and title/role in the box.
+   - Use padding inside the box for better readability (at least 8px horizontal and vertical).
+   - Use a clean sans-serif font.
+
+3. **Arrows (Connectors)**:
+   - Arrows must be **perfectly perpendicular**, not diagonal.
+   - The arrow must:
+     - Go **vertically down** from the center bottom of the parent box.
+     - Then **turn at 90 degrees** (if needed) to reach the center top of the child box.
+   - Avoid bent arrows unless absolutely necessary — prefer straight vertical connectors when possible.
+
+4. **Spacing**:
+   - Maintain even vertical spacing between levels.
+   - Maintain even horizontal spacing between sibling nodes.
+   - Add extra left/right margin/padding for nodes with longer names.
+
+5. **Styling**:
+   - Light neutral background.
+   - Use consistent border radius, stroke width, and arrowhead style.
+   - Hover effects or animation not required.
+   - Keep color palette subtle and professional.
+
+6. **Responsiveness / Viewport**:
+   - Wrap everything inside a `<svg>` element with appropriate `viewBox` so the diagram scales cleanly.
+   - Diagram should not overflow; keep content centered in the canvas.
+
+7. **No External Libraries**:
+   - The output must be pure, standalone SVG + HTML/CSS (no D3.js, no Mermaid, no JS).
+   - Code must be immediately usable in a browser `<body>`.
+
+8. **Input Format**:
+   - You will be given a structured hierarchy like:
+
+     ```
+     Level 1:
+     Ashutosh Sharma (CEO)
+
+     Level 2:
+     - Sandeep Chopra (COO)
+     - Deepak Sardana (CTO)
+     - Jhanvi Sharma (Product Analyst Team Lead)
+
+     Level 3:
+     Under COO:
+     - Sonal Salgotra (Business Analyst)
+
+     Under CTO:
+     - Ayush Gautam (Frontend Engineer)
+     - Ashish (Backend Engineer)
+     - Anjali Maurya (Generative AI Engineer)
+     - Divyanshi (DBA)
+     ```
+
+9. **Goal**:
+   - Output SVG and HTML code that renders this as a visually balanced, modern team structure diagram suitable for a professional dashboard or internal app.
+   - Do not hallucinate or improvise hierarchy or roles.
+
+
+
+
+SORA GENERATION
+Draw a full-view, non-cropped organizational chart titled "TEAM STRUCTURE" with exactly 4 horizontal layers (rows). Use small, proportionally sized white boxes with shadows and dark text. Use straight connector lines between roles, no curves or random arrows. Keep the same visual style as previous diagrams (cloud background, clean fonts, rectangular boxes). Do NOT stylize or reinterpret titles or reporting lines. Row 1 (Top - Centered): Ashutosh Sharma — Chief Executive Officer (CEO) Row 2 (Direct Reports to CEO): Sandeep Chopra — Chief Operating Officer (COO) Deepak Sardana — Chief Technology Officer (CTO) Jhanvi Sharma — Product Analyst Team Lead ➤ These three boxes must be horizontally aligned, centered under CEO, and connected with straight vertical lines. Row 3 (Direct Reports to Level 2): ➤ Under COO (Sandeep Chopra): Sonal Salgotra — Business Analyst ➤ Under CTO (Deepak Sardana): Ayush Gautam — Frontend Engineer Ashish — Backend Engineer Anjali Maurya — Generative AI Engineer Divyanshi — Database Administrator (DBA) ➤ These must be horizontally aligned beneath their respective manager, with clean vertical or elbow connectors. Do NOT float them randomly. ✅ MANDATORY RULES: ❌ Do not write "(CO)" anywhere — use only correct titles: (CEO), (COO), (CTO), (DBA) ✅ All names and job titles must be fully visible and spelled exactly as given ✅ No part of the image must be cropped ✅ Keep all rows visually separate and balanced ❌ Do not merge unrelated roles under the wrong leader ✅ The layout must clearly show who reports to whom, using straight lines ❌ Do not draw extra arrows, loops, or floating nodes ✅ Use small box sizes so the entire chart fits in one frame ✅ Title at top: TEAM STRUCTURE

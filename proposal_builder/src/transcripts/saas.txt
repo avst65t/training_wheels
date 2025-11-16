@@ -1,0 +1,163 @@
+Transcript: SaaS Web App Requirements Call
+
+Participants:
+Rohit (Client, Founder & CEO of a mid-size HR consultancy)
+Neha (Client, Head of HR Ops)
+Arjun (Agency Project Manager)
+Sonal (Agency Business Analyst)
+Dev (Agency Tech Lead)
+Nikhil (Agency UX/UI Designer)
+
+---
+
+\[Start of Call]
+
+Arjun: Hi everyone, thanks for joining today. Can you all hear me clearly?
+
+Rohit: Yes, loud and clear.
+
+Neha: Yep, all good.
+
+Sonal: Great, we can hear you too.
+
+Arjun: Perfect. So let’s begin. As I understand from our earlier email exchange, you’re planning to build a SaaS-based HR platform, right? Could you walk us through the vision in your own words?
+
+Rohit: Sure. We’re currently an HR consultancy firm, but we see a gap in the market. Many small and medium businesses don’t have proper HR systems. They can’t afford big tools like SAP SuccessFactors or Workday. We want to build a lightweight but professional SaaS web app that covers essentials: employee onboarding, leave management, performance reviews, payroll basics, and compliance reminders.
+
+Neha: To add to that, we want something modular. A company should be able to subscribe only to what they need. Like if they just want leave and attendance, they shouldn’t have to pay for payroll.
+
+Sonal: That makes sense. So it’s essentially a subscription-based HR suite with modular pricing.
+
+Rohit: Exactly.
+
+Dev: Can I ask — what scale are you expecting? How many companies and employees might be onboarded in, say, the first year?
+
+Rohit: Good question. We’re targeting at least 100 companies within the first 12 months. Each company could range from 50 to 500 employees.
+
+Neha: Some may be smaller, like 20 people, but we want to support scale to 1,000+ employees eventually.
+
+Dev: Got it. That helps with infrastructure planning.
+
+Arjun: Let’s break it down. From what I hear, the core modules could be:
+
+1. Employee onboarding and digital records
+2. Leave and attendance management
+3. Payroll basics
+4. Performance reviews and appraisals
+5. Compliance alerts and reminders
+6. Analytics and dashboards
+
+Neha: Yes, and also recruitment workflows later — like job postings and candidate tracking — but that can be phase two.
+
+Rohit: Yeah, we don’t want to overload the first launch.
+
+Nikhil: For the user experience, do you imagine one interface for all companies, like a multi-tenant system where each company has its own login and space?
+
+Rohit: Yes, absolutely multi-tenant. Each company should feel it’s their system. Their logo, their policies, their employee data, but still managed centrally by us.
+
+Sonal: So we’ll need company-level admin roles, HR manager roles, and employee roles.
+
+Neha: Correct. Employees should have self-service for leaves, payslips, performance forms, while admins manage setup.
+
+Dev: On payroll — are we talking about full statutory compliance, like tax calculations, provident fund, etc.?
+
+Rohit: Eventually yes, but in phase one just basic salary structure, payslip generation, and integration with bank transfers. Later we can add tax compliance and region-specific modules.
+
+Neha: Right. Even a downloadable CSV that companies can upload to their bank systems would be enough to start.
+
+Arjun: Okay. Let’s touch on integrations. Do you foresee connecting with other tools — like Slack, Teams, or biometric devices?
+
+Rohit: Yes. Slack and Teams integration would be good for leave notifications. Biometric integration maybe in phase two.
+
+Neha: Also, we want email and SMS alerts for key events — like approval pending, appraisal due, compliance deadlines.
+
+Dev: For SMS, we can use Twilio or a local SMS gateway. For email, SendGrid or AWS SES.
+
+Nikhil: About the interface — would you like mobile-first or primarily web with responsive design?
+
+Rohit: Start with web-first but mobile responsive. Later maybe a mobile app if adoption is high.
+
+Neha: Yeah, for now responsive web is enough.
+
+Sonal: What about reporting? Any particular KPIs?
+
+Neha: We need dashboards for HR managers — attrition rate, average leave balance, payroll costs, performance ratings distribution. Simple charts and exports to Excel.
+
+Rohit: Yes, and also reminders like “compliance filings due this month.”
+
+Dev: That would mean some background job scheduling as well.
+
+Arjun: Let me pause for a second. From our side, we usually suggest a phased rollout. For example:
+Phase 1: Employee onboarding, leave/attendance, payroll basics, multi-tenant architecture, reporting.
+Phase 2: Performance management, compliance alerts, recruitment workflows.
+Phase 3: Advanced integrations, mobile app, statutory compliance.
+
+Rohit: That sounds reasonable.
+
+Neha: Yes, phased is fine. We need something live in six months ideally.
+
+Arjun: Understood. On the tech side, Dev, maybe you can suggest options?
+
+Dev: Sure. For multi-tenancy, we can build with Node.js or Django as backend. Database could be PostgreSQL with tenant separation. Frontend React or Vue. Hosting on AWS with containerization for scalability. We’ll also need secure authentication, probably OAuth or SSO-ready.
+
+Sonal: Any preference from your side, Rohit?
+
+Rohit: We don’t have strong preferences. Just make sure it’s secure and scalable.
+
+Neha: And user-friendly — our clients are not tech-savvy.
+
+Nikhil: Absolutely. We’ll keep a clean, modern design. Maybe a dashboard homepage with widgets like “Pending Leave Requests,” “Upcoming Appraisals,” etc.
+
+Rohit: Perfect.
+
+Arjun: Let’s also talk about pricing. Do you see flat pricing per company or per employee per month?
+
+Rohit: Per employee per month makes more sense. Something like 50–100 INR per employee depending on modules.
+
+Neha: Yes, and discounts for annual plans.
+
+Sonal: Okay, we’ll build a subscription engine with Stripe or Razorpay for payments.
+
+Dev: Razorpay might be better for Indian market integration.
+
+Rohit: Yes, Razorpay is good.
+
+Arjun: Great. One last thing — data privacy. Clients will want assurance. Should we host all data in India?
+
+Rohit: Yes, data residency in India is required.
+
+Neha: And GDPR-like compliance would be good for global expansion later.
+
+Arjun: Got it. We’ll factor that in.
+
+Nikhil: Can I ask — do you envision role-based dashboards? For example, HR managers see more analytics, employees see self-service only.
+
+Neha: Yes, exactly. Also, managers should see their team’s data but not full company data.
+
+Sonal: That means we’ll need granular role permissions.
+
+Rohit: Correct.
+
+Dev: Okay, that’s clear.
+
+Arjun: Alright, I think we’ve covered a lot. Anything else from your side?
+
+Neha: Maybe one more thing — offboarding workflows. Like exit formalities, clearance forms, experience letters.
+
+Rohit: Yes, that would be good in phase two.
+
+Arjun: Noted. Anything else, team?
+
+Sonal: I think we’ve got a comprehensive view.
+
+Nikhil: Same here.
+
+Dev: Yeah, clear from tech side.
+
+Arjun: Perfect. We’ll take all this back, map into detailed requirements, and reconvene next week.
+
+Rohit: Sounds good.
+
+Neha: Thanks everyone.
+
+\[End of Call]

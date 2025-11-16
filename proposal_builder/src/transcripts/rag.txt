@@ -1,0 +1,146 @@
+Transcript: RAG Agentic Bot Requirements Call
+
+Participants:
+Rohit (Client, Head of Innovation at a fintech firm)
+Sethi (Client, Senior Product Manager)
+Arjun (Agency Project Manager)
+Sonal (Agency Business Analyst)
+John (Agency Tech Lead)
+Nikhil (Agency AI Architect)
+Priya (Agency UX/UI Designer)
+
+---
+
+\[Start of Call]
+
+Arjun: Hi everyone, thanks for joining. Can you hear me alright?
+
+Rohit: Yes, loud and clear.
+
+Sethi: All good from my side too.
+
+Sonal: Great, we can hear you.
+
+Arjun: Perfect. So today’s agenda is to understand in detail what you’re envisioning for this AI bot. From your earlier note, I gathered that it’s more than a basic chatbot — it’s meant to be agentic, with retrieval and some automation. But we’d love to hear it directly from you.
+
+Rohit: Right. So, our company deals with a lot of regulatory documents, compliance manuals, and client queries. Right now, our customer support team spends hours searching through PDFs and guidelines to answer client questions. We want a bot that can handle those queries intelligently, not just keyword search.
+
+Sethi: Exactly. Something that can read from our knowledge base, give accurate answers, and even trigger some actions — like sending a compliance checklist to a client or drafting a report.
+
+Nikhil: So we’re talking about a retrieval-augmented generation system — it would pull context from your document base and then use an LLM to respond. The “agentic” part means it can take structured actions beyond just chat, right?
+
+Rohit: Yes, that’s the idea.
+
+John: Let me ask — what kind of documents are we talking about? Static PDFs, dynamic data, or both?
+
+Sethi: Mostly static PDFs — regulatory guidelines, client agreements, internal SOPs. But we also have structured data in databases, like customer portfolios, which might need to be pulled sometimes.
+
+Sonal: Understood. So we’d need connectors for both unstructured docs and structured databases.
+
+Rohit: Correct.
+
+Arjun: Okay. Let’s think about use cases. One could be a client asking, “What’s the process for onboarding a new investor under SEBI regulations?” The bot should pull the right section from a regulatory doc, summarize, and present it. Another could be, “Send me the KYC checklist for high-net-worth individuals.” In that case, the bot should not just answer but generate and send the checklist.
+
+Sethi: That’s exactly what we want.
+
+Nikhil: On the technical side, we’d probably need a vector database for document embeddings, maybe something like Pinecone or Weaviate. For structured data, we can build connectors with SQL or APIs. The LLM will handle reasoning, but we’ll need guardrails to ensure accuracy.
+
+John: Yes, because compliance-related answers can’t afford hallucinations. We might need to implement citations — showing the source document alongside the answer.
+
+Rohit: Yes, very important. Our legal team will insist on that.
+
+Priya: And from a UI perspective, would you like this bot embedded in your client portal, or as a standalone web app?
+
+Sethi: Initially, standalone web app for internal teams. Later, embedded into client-facing portals.
+
+Sonal: Roles and permissions then?
+
+Rohit: Internal employees first. Different roles: support agents, compliance officers, maybe managers. Not all should see everything.
+
+John: Got it. Role-based access with document-level permissions.
+
+Nikhil: I’d also recommend we plan for multiple retrieval strategies. PDFs can be tricky — sometimes we’ll need semantic search, sometimes keyword fallback.
+
+Sethi: That’s good. We can’t miss relevant sections just because of phrasing.
+
+Arjun: Let’s talk actions. Apart from answering queries, what other actions should the bot perform?
+
+Rohit: Sending documents, generating compliance checklists, summarizing client portfolios, and maybe drafting templated emails.
+
+Sethi: Also, scheduling tasks. For example, if someone asks, “Remind me to file this compliance by September 30,” the bot should create a calendar reminder.
+
+Priya: That means integration with Outlook or Google Calendar.
+
+John: Yes, and with your internal task management system if needed.
+
+Rohit: We use Jira for tasks, Outlook for mail and calendar.
+
+Sonal: So integrations with Jira and Outlook APIs.
+
+Nikhil: That adds complexity but it’s doable.
+
+Arjun: Timelines are always important. Do you have a target launch date?
+
+Rohit: We’d like a working prototype in four months, full launch in eight.
+
+Sethi: But we’re open to phasing it — maybe start with document Q\&A, then add actions later.
+
+Arjun: That makes sense. Phase one: retrieval and Q\&A. Phase two: actions and integrations. Phase three: client-facing portal.
+
+Rohit: Yes, I like that.
+
+John: Let’s also discuss hosting. Do you prefer on-premise, cloud, or hybrid?
+
+Rohit: Cloud is fine, but data must remain in India. We can use AWS Mumbai region.
+
+Sethi: Security is crucial. End-to-end encryption, audit logs, and user access tracking are must-haves.
+
+Sonal: Noted.
+
+Priya: For the UX, do you prefer conversational chat-only, or also buttons and quick actions?
+
+Sethi: Chat-first, but quick actions will help. For example, if the bot answers and also shows a “Download checklist” button.
+
+Nikhil: That’s a good hybrid design.
+
+John: On the AI side, which LLM do you prefer? OpenAI, Anthropic, or open-source models hosted privately?
+
+Rohit: We’re open. But we want cost control. If open-source works, that’s better.
+
+Sethi: But accuracy and reliability matter more than cost in compliance.
+
+Nikhil: Maybe a hybrid — open-source for general tasks, API-based for complex compliance Q\&A.
+
+John: Yes, we can route queries accordingly.
+
+Arjun: Sounds like a good plan. Let’s also think about monitoring. We should log all interactions, measure accuracy, and have human review for sensitive answers.
+
+Rohit: Absolutely.
+
+Sonal: One more thing — multilingual support?
+
+Sethi: English first. Maybe Hindi later, since some clients prefer it.
+
+John: Okay, we’ll design with multilingual capability.
+
+Priya: And from design perspective, we’ll keep it modern, professional, but simple. No flashy stuff.
+
+Rohit: Yes, clean and trustworthy.
+
+Arjun: Alright, I think we’ve covered a lot today. Anything else from your side?
+
+Sethi: Just one — can the bot also learn continuously? Like if compliance changes, can we update quickly?
+
+Nikhil: Yes, we can set up pipelines to re-index new documents automatically.
+
+John: Even nightly updates are possible.
+
+Rohit: Perfect.
+
+Arjun: Great. So we’ll take today’s discussion, draft detailed requirements, and regroup with a proposed architecture.
+
+Rohit: Sounds good.
+
+Sethi: Thanks everyone.
+
+\[End of Call]

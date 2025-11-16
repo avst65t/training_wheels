@@ -1,0 +1,55 @@
+GENERATION
+
+# Perfect Flow Diagram Prompt Template
+
+**Create an SVG flow diagram for the following app workflow:**
+
+[INSERT YOUR APP WORKFLOW HERE]
+
+**CRITICAL REQUIREMENTS - Follow these exactly:**
+
+## Layout & Positioning:
+- Canvas size: 900x1000px minimum
+- Each box: 120x60px with 6px rounded corners
+- Vertical spacing between rows: 100px minimum
+- Horizontal spacing between parallel elements: 180px minimum
+- Center the main flow vertically on canvas
+- All parallel components must be on the same Y-coordinate
+
+## Box Specifications:
+- Use semantic colors: Frontend (blue), Storage (red), Backend (green), Database (purple), AI (orange), Decision (orange oval)
+- Each box has title (11px, bold) and subtitle (9px, gray)
+- Boxes must never overlap with arrows
+
+## Arrow Requirements:
+- Arrow heads: 6x4px maximum size (small but visible)
+- Stroke width: 2px
+- Main flow arrows: Dark gray (#475569)
+- Conditional flow arrows: Red (#dc2626)
+- **PERPENDICULAR ONLY**: All arrows must go horizontally then vertically OR vertically then horizontally (90-degree turns)
+- Arrows connect to center points of box sides (top/bottom/left/right centers)
+- Bidirectional arrows for communication between parallel components
+- Minimum 40px clearance around all arrows
+
+## Flow Logic:
+- Identify main sequential flow (vertical)
+- Group parallel/simultaneous processes on same row
+- Separate conditional branches clearly
+- Decision points use diamond/oval shapes
+- Label all conditional paths ("YES"/"NO" or "NEW FILE"/"EXISTS")
+
+## Professional Standards:
+- Clean, minimal design
+- Consistent spacing and alignment
+- Clear visual hierarchy
+- No overlapping elements
+- Readable labels with background rectangles
+- Modern color scheme with good contrast
+
+**OUTPUT FORMAT: Single SVG file with complete, functional diagram**
+
+**Do not ask for clarification - analyze the workflow, plan the layout systematically, then generate the complete SVG.**
+
+EXTRACTION
+
+i need you to extract the services from this, exact coordinates of them, canvas size and arrow paths so that i can draw them on my frontend app i need output in json

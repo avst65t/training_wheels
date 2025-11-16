@@ -1,0 +1,19 @@
+[project]
+name = "api"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "docling==2.38.1",
+    "fastapi>=0.115.13",
+    "huggingface-hub>=0.33.0",
+    "onnxruntime>=1.22.0",
+    "openai>=1.88.0",
+    "psycopg2-binary>=2.9.10",
+    "pypdf>=5.6.1",
+    "python-dotenv>=1.1.0",
+    "python-multipart>=0.0.20",
+    "sqlalchemy>=2.0.41",
+    "uvicorn>=0.34.3",
+]

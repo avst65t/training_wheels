@@ -1,0 +1,103 @@
+Prompt for LAYER 1 -> architecture_diagram_planning
+
+i want you to analyze this properly:
+{architecture_json}
+
+steps:
+- answer if you're able to understand it
+- if yes, analyze this json properly
+- define services and treat them as nodes, also mention about the tech stack as icon
+- also define edges
+- then make containers and stack services in it like how expert designer architect would do like frontend layer, ai layer, cloud layer, etc for your reference
+- do not skip or treat 2 services as one
+- Clean Logical Grouping (Containerization), Similar components are grouped within visual containers, This avoids clutter and gives a "modular" perception at a glance.
+
+
+
+Prompt for LAYER 2 -> layout
+
+{architecture_diagram_planning}
+
+Service Flow Layout Strategy
+
+Core Requirements
+- **Flow Direction**: Left-to-right progression based on service invocation order
+- **Container Sizing**: Small containers (few services) vs Large containers (many services)
+- **Symmetrical Layout**: Balance small and large containers across columns
+- **Compact Design**: Vertically balanced, not overly stretched
+
+Layout Rules
+1. **Analyze Services**: Identify invocation order (first services → left, later services → right)
+2. **Categorize Containers**: Count total containers, classify as small/large based on service count
+3. **Column Strategy**: 
+   - Small containers: Stack 2 or more per column depending upon services in those containers
+   - Large containers: Place 1 per column
+   - Alternate placement for symmetry
+4. **Service Matrix**: Within each container, arrange services in 2x2 or 2x3 grid format
+5. **Balancing**: Place ~50% of services first, then adjust remaining services horizontally or vertically
+
+Example Layout Logic
+- 6 containers (4 small, 2 large)
+- Column 1: 2 small stacked
+- Column 2: 1 large  
+- Column 3: 1 large
+- Column 4: 2 small stacked
+- Connect with arrows showing flow direction
+
+Output Requirements
+- Maintain left-to-right flow priority like the initial data flow contianer must be placed and started from left
+- Create vertically compact design
+- Stack ending services at bottom for compactness
+- Ensure visual balance and symmetry
+
+
+Prompt for LAYER 3 -> coordinates
+
+Create a very basic static HTML code for architecture diagram flowing left-to-right as per the {layout}
+- Large containers occupy full column height
+- Small containers should be STACKED VERTICALLY in columns to match their column height with column height of large containers like grid style
+- All columns must have identical total heights (perfect grid alignment)
+- Container headings at top of each container
+
+Canvas and Background
+- Body background: white
+- Canvas background: red only
+
+Container Layouts
+Narrow Containers:
+- Stack services vertically with equal spacing
+
+Wide Containers:
+- Use grid layout (2x2, 2x3, etc.) based on service count
+- Equal spacing between grid
+
+- Container size increases as per service size
+if one service keep it small, if 2 services, increase its size and increase container size as per the service count
+
+Spacing Requirements
+- Equal gaps between containers/columns
+- Equal padding around entire diagram on canvas
+
+Alignment Requirements
+- All columns must end at same height (perfect grid symmetry). No container should appear higher or lower than others
+
+
+from your generated html code, give canvas and container dimensions coordinates like the dummy json for your reference only:
+{
+  "canvas": {
+    "width": 
+    "height": 
+    "padding":
+  },
+  "containers": [
+    {
+      "id": "auth-services-container",
+      "x": 
+      "y": 
+      "width": 
+      "height":
+    },
+  ]
+}
+
+provide json at end after saying exact 'OUTPUT' word only for regex purpose

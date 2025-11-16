@@ -1,0 +1,18 @@
+this is my app workflow: 
+1. User uploads a document (React Frontend). 
+2. Document is sent to cloud storage (AWS S3 Bucket). 
+3. Cloud storage triggers backend processing (AWS S3 Bucket -> FastAPI Backend). 
+4. Backend processes the document: 
+
+* Generates a hash (FastAPI Backend -> Hashing Utility). 
+* Checks hash against database (FastAPI Backend <-> PostgreSQL DB).
+
+**IF NEW FILE:** 
+* Triggers PDF conversion (FastAPI Backend -> PDF Preprocessor). 
+* PDF converter sends images to AI (PDF Preprocessor -> OpenAI GPT-4.1 Mini). 
+* AI sends extracted data to database for saving (OpenAI GPT-4.1 Mini -> PostgreSQL DB). 
+
+**IF FILE EXISTS OR AFTER NEW FILE PROCESSING:** 
+* Loads/confirms results from database (PostgreSQL DB -> FastAPI Backend). 
+
+5. Backend sends final result for display (FastAPI Backend -> Display Result).
